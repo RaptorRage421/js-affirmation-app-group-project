@@ -17,9 +17,20 @@ body {
   flex-direction: column;
 }
 header {
+  background-image: url(./images/fireandice.jpg);
+  background-size: cover;
+  background-blend-mode:exclusion;
+  background-repeat: no-repeat;
+ background-position: center;
+ background-color: #574e4e;
   height: 8em;
-  background-color: #7a7a7a;
   text-align: center;
+  
+  
+  font-size: 25px;
+
+  font-weight: 100;
+  color: red  ;
 }
 main {
   flex: auto;
@@ -41,7 +52,10 @@ header, footer {
   align-items: center;
 }
 h1 {
-  font-size: 2.5em;
+  font-size: 3em;
+  -webkit-text-stroke-width: 1px ;
+  -webkit-text-stroke-color: rgb(0, 0, 0) ;
+  font-weight: 900;
 }
 
 
@@ -82,10 +96,10 @@ thead {
 tbody tr:nth-child(odd){ 
  background-image: url(./images/fire.jpg);
  background-size: contain;
-  
+ color: rgb(101, 240, 255); 
 }
 tbody tr:nth-child(even){
   background-image: url(./images/ice.jpg);
   background-size: contain;
-  
+  color: rgb(249, 61, 24);
 }
