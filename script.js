@@ -34,8 +34,10 @@ function handleSubmit(event) {
   let affirmationInput = document.getElementById('affirmation').value
   let authorInput = document.getElementById('author').value
   console.log(`incoming affirmation ${affirmationInput} by ${authorInput}`)
+  if (affirmationInput.length > 0 && authorInput.length > 0){
   if (fireNumber > iceNumber){
-  let tableInfusion = document.getElementById("affirmationLocation")
+  
+    let tableInfusion = document.getElementById("affirmationLocation")
   tableInfusion.innerHTML += `<tr>
   <td>${affirmationInput}</td>
   <td>${authorInput}</td>
@@ -48,6 +50,8 @@ else {
 }
 document.getElementById("affirmation").value = ""
   document.getElementById("author").value = ""
+}
+else {messageOutput.innerHTML = "Need to Enter values for input"}
 }
 
 
