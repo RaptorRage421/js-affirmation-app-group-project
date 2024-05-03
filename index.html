@@ -28,11 +28,11 @@
 
     <section>
       <h3>Create an Affirmation:</h3>
-      <form>
-        <input
+      <form onSubmit="handleSubmit(event)">
+        <input id="affirmation"
           placeholder="Affirmation"
           type="text">
-        <input
+        <input id="author"
           placeholder="Author"
           type="text">
         <button>Submit</button>
@@ -48,19 +48,8 @@
             <th>Affirmation Author</th>
           </tr>
         </thead>
-        <tbody>
-          <tr>
-            <td>You probably got this!</td>
-            <td>Oscar</td>
-          </tr>
-          <tr>
-            <td>You definitely got this!</td>
-            <td>Elmo</td>
-          </tr>
-          <tr>
-            <td>Don't forget to delete these three hardcoded table rows!</td>
-            <td>Abby Cadabby</td>
-          </tr>
+        <tbody id="affirmationLocation">
+          
         </tbody>
       </table>
     </section>
