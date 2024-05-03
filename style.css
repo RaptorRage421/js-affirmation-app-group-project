@@ -96,7 +96,7 @@ thead {
 tbody tr:nth-child(odd){ 
  background-image: url(./images/fire.jpg);
  background-size: contain;
- color: rgb(101, 240, 255); 
+ color: rgb(164, 246, 255); 
 }
 tbody tr:nth-child(even){
   background-image: url(./images/ice.jpg);

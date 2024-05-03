@@ -10,7 +10,7 @@ let messageOutput = document.getElementById('messages')
 
 function makeFire() {
 console.log('make fire works')
-let emojis = document.getElementById('emojis')
+let emojis = document.getElementById('fire')
 emojis.innerHTML += `<span id='fireEmoji'>🔥</span>`
 fireNumber ++ 
 console.log("number of fire Emojis: ", fireNumber)
@@ -19,7 +19,7 @@ messageOutput.innerText = ""
 
 function makeIce() {
   console.log('make ice works')
-  let emojis = document.getElementById('emojis')
+  let emojis = document.getElementById('ice')
 emojis.innerHTML += `<span id='iceEmoji'>❄️</span>`
 iceNumber ++
 console.log("number of ice Emojis: ", iceNumber)
@@ -44,12 +44,13 @@ function handleSubmit(event) {
   <td><button onClick="deleteAffirmation(event)">❌</button></td>
 </tr>
 `
+document.getElementById("affirmation").value = ""
+  document.getElementById("author").value = ""
   }
 else {
   messageOutput.innerHTML = "NOT ENOUGH 🔥 TO MAKE AFFIRMATIONS!"
 }
-document.getElementById("affirmation").value = ""
-  document.getElementById("author").value = ""
+
 }
 else {messageOutput.innerHTML = "Need to Enter values for input"}
 }
