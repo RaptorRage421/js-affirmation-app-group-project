@@ -14,7 +14,7 @@ let emojis = document.getElementById('emojis')
 emojis.innerHTML += `<span id='fireEmoji'>🔥</span>`
 fireNumber ++ 
 console.log("number of fire Emojis: ", fireNumber)
-messageOutput = ""
+messageOutput.innerText = ""
 }
 
 function makeIce() {
@@ -23,7 +23,7 @@ function makeIce() {
 emojis.innerHTML += `<span id='iceEmoji'>❄️</span>`
 iceNumber ++
 console.log("number of ice Emojis: ", iceNumber)
-messageOutput = ""
+messageOutput.innerText = ""
 }
 
 
@@ -44,10 +44,10 @@ function handleSubmit(event) {
 </tr>
 `
   }
-// else {
-//   messageOutput = document.getElementById('messages')
-//   messageOutput.innerHTML = "NOT ENOUGH 🔥 TO MAKE AFFIRMATIONS"
-// }
+else {
+ 
+  messageOutput.innerHTML = "NOT ENOUGH 🔥 TO MAKE AFFIRMATIONS!"
+}
 document.getElementById("affirmation").value = ""
   document.getElementById("author").value = ""
 }
@@ -60,5 +60,8 @@ function deleteAffirmation(event){
   let deleteTableRow = event.target.parentElement.parentElement
   deleteTableRow.remove()
   }
+  else {
+    messageOutput.innerHTML = "NOT ENOUGH ❄️ TO DELETE!"
+}
 }
   
