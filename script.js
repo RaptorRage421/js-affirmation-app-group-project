@@ -28,7 +28,6 @@ messageOutput.innerText = ""
 
 
 
-//! make adjustments this is just for reference
 function handleSubmit(event) {
   console.log('handle submit works...')
   event.preventDefault()
@@ -45,7 +44,6 @@ function handleSubmit(event) {
 `
   }
 else {
- 
   messageOutput.innerHTML = "NOT ENOUGH 🔥 TO MAKE AFFIRMATIONS!"
 }
 document.getElementById("affirmation").value = ""
